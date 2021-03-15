@@ -29,12 +29,12 @@ docker run -it --entrypoint=/bin/bash -t j3ssie/codeql-docker:latest /bin/bash
 
 ### Run query and read result
 #### Run query
-```codeql query run (--database=<database> | --dataset=<dataset>) [--output=<file.bqrs>] [--threads=<num>] [--ram=<MB>] <options>... [--] <file.ql>
-```
+`codeql query run (--database=<database> | --dataset=<dataset>) [--output=<file.bqrs>] [--threads=<num>] [--ram=<MB>] <options>... [--] <file.ql>`
+
 
 #### BQRS decode
-```codeql bqrs decode [--output=<file>] [--result-set=<name>] [--sort-key=<col>[,<col>...]] <options>... [--] <file>
-```
+`codeql bqrs decode [--output=<file>] [--result-set=<name>] [--sort-key=<col>[,<col>...]] <options>... [--] <file>`
+
 
 Example:
 ```
