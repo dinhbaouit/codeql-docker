@@ -14,7 +14,7 @@ or pull the latest from docker hub
 docker pull j3ssie/codeql-docker:latest
 
 # then run the container
-docker run -it j3ssie/codeql-docker:latest
+docker run --restart unless-stopped -it j3ssie/codeql-docker:latest
 ```
 
 
