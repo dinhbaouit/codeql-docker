@@ -27,12 +27,15 @@ docker run -it --entrypoint=/bin/bash -t j3ssie/codeql-docker:latest /bin/bash
 ```
 
 
-### Run query
-#### Run Query
-```codeql query run (--database=<database> | --dataset=<dataset>) [--output=<file.bqrs>] [--threads=<num>] [--ram=<MB>] <options>... [--] <file.ql>```
+### Run query and read result
+#### Run query
+```codeql query run (--database=<database> | --dataset=<dataset>) [--output=<file.bqrs>] [--threads=<num>] [--ram=<MB>] <options>... [--] <file.ql>
+```
 
-#### BQRS Decode
-```codeql bqrs decode [--output=<file>] [--result-set=<name>] [--sort-key=<col>[,<col>...]] <options>... [--] <file>```
+#### BQRS decode
+```codeql bqrs decode [--output=<file>] [--result-set=<name>] [--sort-key=<col>[,<col>...]] <options>... [--] <file>
+```
+
 Example:
 ```
 $ codeql query run --database /opt/src/db/ -o test.bqrs ~/codeql-home/codeql-repo/java/ql/src/DeadCode/DeadClass.ql
